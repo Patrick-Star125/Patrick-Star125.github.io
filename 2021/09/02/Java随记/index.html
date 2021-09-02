@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Java随记 - NetPunk的个人博客</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="NetPunk的个人博客"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="NetPunk的个人博客"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Java小知识 java.lang是一个经常会用到的基础包，所以String与System可以不用import 没有在早期版本中包含在java标准库中的扩展包都是以javax作为包名称的开头，例如javax.swing"><meta property="og:type" content="blog"><meta property="og:title" content="Java随记"><meta property="og:url" content="http://example.com/2021/09/02/Java%E9%9A%8F%E8%AE%B0/"><meta property="og:site_name" content="NetPunk的个人博客"><meta property="og:description" content="Java小知识 java.lang是一个经常会用到的基础包，所以String与System可以不用import 没有在早期版本中包含在java标准库中的扩展包都是以javax作为包名称的开头，例如javax.swing"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="http://example.com/img/og_image.png"><meta property="article:published_time" content="2021-09-02T02:33:07.000Z"><meta property="article:modified_time" content="2021-09-02T02:41:20.032Z"><meta property="article:author" content="NetPunk"><meta property="article:tag" content="java"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2021/09/02/Java%E9%9A%8F%E8%AE%B0/"},"headline":"Java随记","image":["http://example.com/img/og_image.png"],"datePublished":"2021-09-02T02:33:07.000Z","dateModified":"2021-09-02T02:41:20.032Z","author":{"@type":"Person","name":"NetPunk"},"publisher":{"@type":"Organization","name":"NetPunk的个人博客","logo":{"@type":"ImageObject","url":"http://example.com/img/logo.svg"}},"description":"Java小知识 java.lang是一个经常会用到的基础包，所以String与System可以不用import 没有在早期版本中包含在java标准库中的扩展包都是以javax作为包名称的开头，例如javax.swing"}</script><link rel="canonical" href="http://example.com/2021/09/02/Java%E9%9A%8F%E8%AE%B0/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="NetPunk的个人博客" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-09-02T02:33:07.000Z" title="2021/9/2 上午10:33:07">2021-09-02</time>发表</span><span class="level-item"><time dateTime="2021-09-02T02:41:20.032Z" title="2021/9/2 上午10:41:20">2021-09-02</time>更新</span><span class="level-item">7 分钟读完 (大约1063个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">Java随记</h1><div class="content"><h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><h2 id="小知识"><a href="#小知识" class="headerlink" title="小知识"></a>小知识</h2><ul>
+<li>java.lang是一个经常会用到的基础包，所以String与System可以不用import</li>
+<li>没有在早期版本中包含在java标准库中的扩展包都是以javax作为包名称的开头，例如javax.swing</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="语法规范"><a href="#语法规范" class="headerlink" title="语法规范"></a>语法规范</h2><h3 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h3><p><strong>static</strong></p>
+<p>static表示静态、全局的意思，用来修饰成员变量和成员方法，也可以写成静态代码块被static关键字修饰的类成员可以通过类名加”.”直接访问，具体的讲</p>
+<ul>
+<li> 被static修饰的成员变量和成员方法独立于该类的任何对象</li>
+<li> 用public修饰的static成员变量和成员方法本质是全局变量和全局方法</li>
+<li> static变量前可以有private修饰，表示这个变量可以在类的静态代码块中，或者类的其他静态成员方法中使用</li>
+<li> static修饰的成员变量和成员方法习惯上称为静态变量和静态方法，可以直接通过类名来访问</li>
+<li> static可以用来修饰代码块，JVM加载类时会执行这些静态的代码块，如果static代码块有多个，JVM将按照它们在类中出现的先后顺序依次执行它们，每个代码块只会被执行一次。用代码块可以在不创建对象的情况下调用类内的变量</li>
+<li> static与final一起使用，表示全局常量，对于变量，表示可以通过类名进行访问，但是无法修改</li>
+<li> 静态方法只能调用同类中的其它静态方法和变量，不能直接访问类中的非静态成员，并且不能够以任何方式引用this和super</li>
+</ul>
+<p><strong>private</strong></p>
+<p>限定成员变量范围在类之内，即在同一类内可见。使用对象：变量、方法。 <strong>注意：不能修饰类（外部类）</strong></p>
+<p>重写是子类对父类的允许访问的方法的实现过程进行重新编写, 返回值和形参都不能改变。<strong>即外壳不变，核心重写！</strong></p>
+<p><strong>@注解符</strong></p>
+<p>Java 注解（Annotation）又称 Java 标注，是 JDK5.0 引入的一种注释机制</p>
+<p>java标准库内定义的注解是有实际意义的，除此之外的注解是作为一种格式，让注解内容显示注释预览上，没有实际意义</p>
+<p>在标准中定义的注解有</p>
+<ul>
+<li>@Override - 检查该方法是否是重写方法。如果发现其父类，或者是引用的接口中并没有该方法时，会报编译错误。</li>
+<li>@Deprecated - 标记过时方法。如果使用该方法，会报编译警告。</li>
+<li>@SuppressWarnings - 指示编译器去忽略注解中声明的警告。</li>
+</ul>
+<p>辅助阅读的注解通常有</p>
+<p>@param - 解释变量</p>
+<p>@return - 解释类型和值</p>
+<h2 id="类"><a href="#类" class="headerlink" title="类"></a>类</h2><p><strong>ArrayList</strong></p>
+<p>像list一样的类，是一种可以随意增删查改的序列的抽象</p>
+<p><code>ArrayList&lt;Egg&gt; myList = New ArrayList&lt;Egg&gt;</code></p>
+<p>虽然ArrayList只能携带对象而不是primitive主数据类型，但是编译器能够自动地将primitive类型包装成Object以存放</p>
+<p><strong>继承与多态</strong></p>
+<ul>
+<li>子类会继承父类所有的public类型的实例变量和方法，但是不会继承父类所有的private类型的实例变量和方法</li>
+<li>只有方法可以被继承类覆盖</li>
+<li>使用IS-A测试来验证继承结构的合理性</li>
+<li>JVM在寻找方法时先从继承树底端开始找起</li>
+<li>final修饰符对变量、方法、类都有很好的保护作用</li>
+<li>在多态下，引用与对象假如有继承关系，那么就可以是不同类型</li>
+<li>通过多态，我们可以设计出灵活的类，设计出可以不必修改的程序</li>
+<li>覆盖方法必须参数一样，返回类型要兼容，且不能降低方法的存储权限</li>
+<li>当一个类中类名与方法名相同时，新建该类对象就会执行对应相同名称的方法</li>
+</ul>
+</div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/java/">java</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/08/29/hello-world/"><span class="level-item">Hello World</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="http://ww1.sinaimg.cn/large/0085WKUpgy1gu2m5f43n2j30so0sdqjk.jpg" alt="NetPunk"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">NetPunk</p><p class="is-size-6 is-block">Bug Maker</p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">2</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">0</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">1</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/Patrick-Star125" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/Patrick-Star125"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">链接</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hello.kexie.space/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">科协官网</span></span><span class="level-right"><span class="level-item tag">hello.kexie.space</span></span></a></li></ul></div></div></div><!--!--><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-09-02T02:33:07.000Z">2021-09-02</time></p><p class="title"><a href="/2021/09/02/Java%E9%9A%8F%E8%AE%B0/">Java随记</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-08-29T12:02:42.018Z">2021-08-29</time></p><p class="title"><a href="/2021/08/29/hello-world/">Hello World</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2021/09/"><span class="level-start"><span class="level-item">九月 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/08/"><span class="level-start"><span class="level-item">八月 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="NetPunk的个人博客" height="28"></a><p class="is-size-7"><span>&copy; 2021 NetPunk</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
